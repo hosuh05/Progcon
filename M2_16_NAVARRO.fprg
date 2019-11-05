@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="my pc"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-11-05 09:21:17 AM"/>
+        <attribute name="created" value="bXkgcGM7REVTS1RPUC03VDdUSDFTOzIwMTktMTAtMjg7MDY6MDg6NDAgUE07MjgyMw=="/>
+        <attribute name="edited" value="bXkgcGM7REVTS1RPUC03VDdUSDFTOzIwMTktMTEtMDE7MDc6NDU6NTMgUE07NzsyOTM1"/>
+        <attribute name="edited" value="UmFtcztMQUIzMDRDMzI7MjAxOS0xMS0wNTswOToyMToxNyBBTTsxNTsyMzU4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Radius" type="Real" array="False" size=""/>
+            <declare name="Diameter" type="Real" array="False" size=""/>
+            <declare name="Area" type="Real" array="False" size=""/>
+            <declare name="Response" type="String" array="False" size=""/>
+            <output expression="&quot;Get area of circle? Yes or No?&quot;" newline="True"/>
+            <input variable="Response"/>
+            <while expression="response = &quot;Yes&quot;">
+                <output expression="&quot;Get area of circle using Radius or Diameter?&quot;" newline="True"/>
+                <input variable="Response"/>
+                <if expression="response = &quot;Diameter&quot;">
+                    <then>
+                        <output expression="&quot;Please enter the Diameter&quot;" newline="True"/>
+                        <input variable="Diameter"/>
+                        <assign variable="Area" expression="1/4*3.14*(Diameter^2)"/>
+                        <output expression="&quot;The area of circle with Diameter &quot;&amp;Diameter &amp;&quot; is &quot;&amp;Area" newline="True"/>
+                    </then>
+                    <else>
+                        <output expression="&quot;please eneter the Radius&quot;" newline="True"/>
+                        <input variable="Radius"/>
+                        <assign variable="Area" expression="pi *(Radius^2)"/>
+                        <output expression="&quot;The area of circle with Radius &quot;&amp;Radius &amp;&quot; is &quot;&amp;Area" newline="True"/>
+                    </else>
+                </if>
+                <output expression="&quot;Get area of circle? Yes or No?&quot;" newline="True"/>
+                <input variable="Response"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>
