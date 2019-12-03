@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Rams"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-12-03 08:06:58 AM"/>
+        <attribute name="created" value="UmFtcztMQUIzMDRDMzI7MjAxOS0xMi0wMzswNzozNzowOSBBTTsyMjAy"/>
+        <attribute name="edited" value="UmFtcztMQUIzMDRDMzI7MjAxOS0xMi0wMzswODowNjo1OCBBTTsxOzIzMTE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Grade" type="Real" array="False" size=""/>
+            <output expression="&quot;Please enter grade&quot;" newline="True"/>
+            <input variable="Grade"/>
+            <if expression="Grade &gt;=95">
+                <then>
+                    <output expression="&quot;4.0&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="Grade &gt;=91 and Grade &lt;=94">
+                        <then>
+                            <output expression="&quot;3.5&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="Grade &gt;=87 and Grade &lt;=90">
+                                <then>
+                                    <output expression="&quot;3.0&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="Grade &gt;=83 and Grade &lt;=86">
+                                        <then>
+                                            <output expression="2.5" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <if expression="Grade &gt;=79 and Grade &lt;=82">
+                                                <then>
+                                                    <output expression="&quot;2.0&quot;" newline="True"/>
+                                                </then>
+                                                <else>
+                                                    <if expression="Grade &gt;=75 and Grade &lt;=78">
+                                                        <then>
+                                                            <output expression="&quot;1.5&quot;" newline="True"/>
+                                                        </then>
+                                                        <else>
+                                                            <if expression="Grade &gt;=70 and Grade &lt;=74">
+                                                                <then>
+                                                                    <output expression="&quot;1.0&quot;" newline="True"/>
+                                                                </then>
+                                                                <else/>
+                                                            </if>
+                                                        </else>
+                                                    </if>
+                                                </else>
+                                            </if>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
